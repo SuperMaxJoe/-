@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E65240A167FD6B75B1E7400 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968D451457EE9775786DF200 /* Pods.framework */; };
+		F6609D271C23B2C4001547EB /* text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6609D261C23B2C4001547EB /* text.jpg */; settings = {ASSET_TAGS = (); }; };
+		F6609D291C23D756001547EB /* proAndCityinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6609D281C23D756001547EB /* proAndCityinfo.plist */; settings = {ASSET_TAGS = (); }; };
+		F6609D2C1C23F103001547EB /* FundCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6609D2B1C23F103001547EB /* FundCombinationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F6D49E2D1C22611800028A62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E2C1C22611800028A62 /* main.m */; };
 		F6D49E301C22611800028A62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E2F1C22611800028A62 /* AppDelegate.m */; };
-		F6D49E331C22611900028A62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E321C22611900028A62 /* ViewController.m */; };
 		F6D49E361C22611900028A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E341C22611900028A62 /* Main.storyboard */; };
 		F6D49E381C22611900028A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E371C22611900028A62 /* Assets.xcassets */; };
 		F6D49E3B1C22611900028A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E391C22611900028A62 /* LaunchScreen.storyboard */; };
 		F6D49E461C22611900028A62 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E451C22611900028A62 /* ____Tests.m */; };
 		F6D49E511C22611900028A62 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E501C22611900028A62 /* ____UITests.m */; };
+		F6D49E661C2263BC00028A62 /* FinancialServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E641C2263BC00028A62 /* FinancialServiceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6D49E671C2263BC00028A62 /* FinancialServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E651C2263BC00028A62 /* FinancialServiceViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		F6D49E6B1C2269BA00028A62 /* FinancialServiceBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E691C2269BA00028A62 /* FinancialServiceBannerCell.m */; settings = {ASSET_TAGS = (); }; };
+		F6D49E6C1C2269BA00028A62 /* FinancialServiceBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E6A1C2269BA00028A62 /* FinancialServiceBannerCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F6D49E701C226A5D00028A62 /* FinancialServiceContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E6E1C226A5D00028A62 /* FinancialServiceContentCell.m */; settings = {ASSET_TAGS = (); }; };
+		F6D49E711C226A5D00028A62 /* FinancialServiceContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E6F1C226A5D00028A62 /* FinancialServiceContentCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F6D49E771C22975D00028A62 /* PayFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E761C22975D00028A62 /* PayFormViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		306DFCA87443434C9EF943F7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5D6C828BACE64E9619DDAE3D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		968D451457EE9775786DF200 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6609D261C23B2C4001547EB /* text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text.jpg; sourceTree = "<group>"; };
+		F6609D281C23D756001547EB /* proAndCityinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = proAndCityinfo.plist; sourceTree = "<group>"; };
+		F6609D2A1C23F103001547EB /* FundCombinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundCombinationViewController.h; sourceTree = "<group>"; };
+		F6609D2B1C23F103001547EB /* FundCombinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundCombinationViewController.m; sourceTree = "<group>"; };
 		F6D49E281C22611800028A62 /* 理财服务.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "理财服务.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D49E2C1C22611800028A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6D49E2E1C22611800028A62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6D49E2F1C22611800028A62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F6D49E311C22611900028A62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6D49E321C22611900028A62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6D49E351C22611900028A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6D49E371C22611900028A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D49E3A1C22611900028A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,17 @@
 		F6D49E4C1C22611900028A62 /* 理财服务UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "理财服务UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D49E501C22611900028A62 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		F6D49E521C22611900028A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D49E631C2263BC00028A62 /* FinancialServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinancialServiceViewController.h; path = ../FinancialServiceViewController.h; sourceTree = "<group>"; };
+		F6D49E641C2263BC00028A62 /* FinancialServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinancialServiceViewController.m; path = ../FinancialServiceViewController.m; sourceTree = "<group>"; };
+		F6D49E651C2263BC00028A62 /* FinancialServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FinancialServiceViewController.xib; path = ../FinancialServiceViewController.xib; sourceTree = "<group>"; };
+		F6D49E681C2269BA00028A62 /* FinancialServiceBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialServiceBannerCell.h; sourceTree = "<group>"; };
+		F6D49E691C2269BA00028A62 /* FinancialServiceBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialServiceBannerCell.m; sourceTree = "<group>"; };
+		F6D49E6A1C2269BA00028A62 /* FinancialServiceBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialServiceBannerCell.xib; sourceTree = "<group>"; };
+		F6D49E6D1C226A5D00028A62 /* FinancialServiceContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialServiceContentCell.h; sourceTree = "<group>"; };
+		F6D49E6E1C226A5D00028A62 /* FinancialServiceContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialServiceContentCell.m; sourceTree = "<group>"; };
+		F6D49E6F1C226A5D00028A62 /* FinancialServiceContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialServiceContentCell.xib; sourceTree = "<group>"; };
+		F6D49E751C22975D00028A62 /* PayFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayFormViewController.h; sourceTree = "<group>"; };
+		F6D49E761C22975D00028A62 /* PayFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayFormViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E65240A167FD6B75B1E7400 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19B80C6ABE0CBF7F2AFE4F66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D6C828BACE64E9619DDAE3D /* Pods.debug.xcconfig */,
+				306DFCA87443434C9EF943F7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F325B6D8314F097839850946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968D451457EE9775786DF200 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6D49E1F1C22611800028A62 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				F6D49E441C22611900028A62 /* 理财服务Tests */,
 				F6D49E4F1C22611900028A62 /* 理财服务UITests */,
 				F6D49E291C22611800028A62 /* Products */,
+				19B80C6ABE0CBF7F2AFE4F66 /* Pods */,
+				F325B6D8314F097839850946 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +149,21 @@
 			children = (
 				F6D49E2E1C22611800028A62 /* AppDelegate.h */,
 				F6D49E2F1C22611800028A62 /* AppDelegate.m */,
-				F6D49E311C22611900028A62 /* ViewController.h */,
-				F6D49E321C22611900028A62 /* ViewController.m */,
+				F6D49E631C2263BC00028A62 /* FinancialServiceViewController.h */,
+				F6D49E641C2263BC00028A62 /* FinancialServiceViewController.m */,
+				F6D49E651C2263BC00028A62 /* FinancialServiceViewController.xib */,
+				F6D49E681C2269BA00028A62 /* FinancialServiceBannerCell.h */,
+				F6D49E691C2269BA00028A62 /* FinancialServiceBannerCell.m */,
+				F6D49E6A1C2269BA00028A62 /* FinancialServiceBannerCell.xib */,
+				F6D49E6D1C226A5D00028A62 /* FinancialServiceContentCell.h */,
+				F6D49E6E1C226A5D00028A62 /* FinancialServiceContentCell.m */,
+				F6D49E6F1C226A5D00028A62 /* FinancialServiceContentCell.xib */,
+				F6609D281C23D756001547EB /* proAndCityinfo.plist */,
+				F6D49E741C22973100028A62 /* xlform */,
 				F6D49E341C22611900028A62 /* Main.storyboard */,
 				F6D49E371C22611900028A62 /* Assets.xcassets */,
 				F6D49E391C22611900028A62 /* LaunchScreen.storyboard */,
+				F6609D261C23B2C4001547EB /* text.jpg */,
 				F6D49E3C1C22611900028A62 /* Info.plist */,
 				F6D49E2B1C22611800028A62 /* Supporting Files */,
 			);
@@ -140,6 +196,17 @@
 			path = "理财服务UITests";
 			sourceTree = "<group>";
 		};
+		F6D49E741C22973100028A62 /* xlform */ = {
+			isa = PBXGroup;
+			children = (
+				F6D49E751C22975D00028A62 /* PayFormViewController.h */,
+				F6D49E761C22975D00028A62 /* PayFormViewController.m */,
+				F6609D2A1C23F103001547EB /* FundCombinationViewController.h */,
+				F6609D2B1C23F103001547EB /* FundCombinationViewController.m */,
+			);
+			name = xlform;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6D49E551C22611900028A62 /* Build configuration list for PBXNativeTarget "理财服务" */;
 			buildPhases = (
+				574CEBB062E61BC7572B0BF9 /* Check Pods Manifest.lock */,
 				F6D49E241C22611800028A62 /* Sources */,
 				F6D49E251C22611800028A62 /* Frameworks */,
 				F6D49E261C22611800028A62 /* Resources */,
+				750109EFC91FC113371BC8D2 /* Embed Pods Frameworks */,
+				031F8821140250C3CAE68F3E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,8 +313,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D49E671C2263BC00028A62 /* FinancialServiceViewController.xib in Resources */,
+				F6D49E711C226A5D00028A62 /* FinancialServiceContentCell.xib in Resources */,
 				F6D49E3B1C22611900028A62 /* LaunchScreen.storyboard in Resources */,
 				F6D49E381C22611900028A62 /* Assets.xcassets in Resources */,
+				F6609D291C23D756001547EB /* proAndCityinfo.plist in Resources */,
+				F6609D271C23B2C4001547EB /* text.jpg in Resources */,
+				F6D49E6C1C2269BA00028A62 /* FinancialServiceBannerCell.xib in Resources */,
 				F6D49E361C22611900028A62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,14 +340,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		031F8821140250C3CAE68F3E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		574CEBB062E61BC7572B0BF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		750109EFC91FC113371BC8D2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6D49E241C22611800028A62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D49E331C22611900028A62 /* ViewController.m in Sources */,
+				F6D49E661C2263BC00028A62 /* FinancialServiceViewController.m in Sources */,
 				F6D49E301C22611800028A62 /* AppDelegate.m in Sources */,
+				F6D49E701C226A5D00028A62 /* FinancialServiceContentCell.m in Sources */,
 				F6D49E2D1C22611800028A62 /* main.m in Sources */,
+				F6D49E6B1C2269BA00028A62 /* FinancialServiceBannerCell.m in Sources */,
+				F6609D2C1C23F103001547EB /* FundCombinationViewController.m in Sources */,
+				F6D49E771C22975D00028A62 /* PayFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +536,7 @@
 		};
 		F6D49E561C22611900028A62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6C828BACE64E9619DDAE3D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "理财服务/Info.plist";
@@ -420,6 +548,7 @@
 		};
 		F6D49E571C22611900028A62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306DFCA87443434C9EF943F7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "理财服务/Info.plist";
@@ -496,6 +625,7 @@
 				F6D49E571C22611900028A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6D49E581C22611900028A62 /* Build configuration list for PBXNativeTarget "理财服务Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +634,7 @@
 				F6D49E5A1C22611900028A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6D49E5B1C22611900028A62 /* Build configuration list for PBXNativeTarget "理财服务UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +643,7 @@
 				F6D49E5D1C22611900028A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

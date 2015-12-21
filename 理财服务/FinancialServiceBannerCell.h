@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FinancialServiceBannerCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *BannerImage;
 
 @end

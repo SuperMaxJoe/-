@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FinancialServiceViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    FinancialServiceViewController *fsVC = [[FinancialServiceViewController alloc]init];
+    UINavigationController *Nav = [[UINavigationController alloc] initWithRootViewController:fsVC];
+    self.window.rootViewController = Nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
