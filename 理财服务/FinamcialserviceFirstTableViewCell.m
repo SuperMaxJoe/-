@@ -1,14 +1,14 @@
 //
-//  SecurityCodeCell.m
+//  FinamcialserviceFirstTableViewCell.m
 //  理财服务
 //
 //  Created by 展恒 on 15/12/21.
 //  Copyright © 2015年 赵百川. All rights reserved.
 //
 
-#import "SecurityCodeCell.h"
+#import "FinamcialserviceFirstTableViewCell.h"
 
-@implementation SecurityCodeCell
+@implementation FinamcialserviceFirstTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FinancialServiceBannerCell.h"
 
 @interface FinancialServiceViewController : UIViewController
-
+@property (strong, nonatomic)FinancialServiceBannerCell *bannerCell;
+@property (nonatomic,copy)NSString * myImage;
 @end

@@ -11,9 +11,10 @@
 #import "FinancialServiceContentCell.h"
 #import "PayFormViewController.h"
 #import "FundCombinationViewController.h"
+
 @interface FinancialServiceViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *financialservice;
-@property (strong, nonatomic)FinancialServiceBannerCell *bannerCell;
+//@property (strong, nonatomic)FinancialServiceBannerCell *bannerCell;
 @property (strong, nonatomic)FinancialServiceContentCell *contentCell;
 
 @end
@@ -41,6 +42,7 @@
     if (indexPath.row == 0) {
         FinancialServiceBannerCell *bannerCell = [self.financialservice dequeueReusableCellWithIdentifier:@"bannerCell"];
         bannerCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        bannerCell.BannerImage.image = [UIImage imageNamed:self.myImage];
         return bannerCell;
     }
     FinancialServiceContentCell *contentCell = [self.financialservice dequeueReusableCellWithIdentifier:@"contentCell"];

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FinancialServiceViewController.h"
+#import "FinamcialServiceFirstViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    FinancialServiceViewController *fsVC = [[FinancialServiceViewController alloc]init];
+    FinamcialServiceFirstViewController *fsVC = [[FinamcialServiceFirstViewController alloc]init];
     UINavigationController *Nav = [[UINavigationController alloc] initWithRootViewController:fsVC];
     self.window.rootViewController = Nav;
     [self.window makeKeyAndVisible];

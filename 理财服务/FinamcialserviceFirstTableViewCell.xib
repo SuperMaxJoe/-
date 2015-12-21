@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FinamcialserviceFirstTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first_img_banner1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dyj-yD-ucv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创新服务一应俱全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c76-wa-w4V">
+                        <rect key="frame" x="8" y="104" width="304" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特色服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-Jn-uSc">
+                        <rect key="frame" x="8" y="80" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="P0D-gj-XUI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c76-wa-w4V" firstAttribute="trailing" secondItem="oSE-Jn-uSc" secondAttribute="trailing" id="4Ew-Xs-eOq"/>
+                    <constraint firstItem="c76-wa-w4V" firstAttribute="top" secondItem="oSE-Jn-uSc" secondAttribute="bottom" constant="3" id="7yR-up-zwR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="c76-wa-w4V" secondAttribute="bottom" constant="7" id="9rr-x6-PNi"/>
+                    <constraint firstItem="c76-wa-w4V" firstAttribute="leading" secondItem="oSE-Jn-uSc" secondAttribute="leading" id="Ajh-4a-LZe"/>
+                    <constraint firstItem="dyj-yD-ucv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hg5-Xp-ySA"/>
+                    <constraint firstItem="c76-wa-w4V" firstAttribute="centerX" secondItem="dyj-yD-ucv" secondAttribute="centerX" id="Ouv-3c-zWs"/>
+                    <constraint firstItem="dyj-yD-ucv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TTJ-rC-oOt"/>
+                    <constraint firstItem="oSE-Jn-uSc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="72" id="awu-aI-TdR"/>
+                    <constraint firstItem="oSE-Jn-uSc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="kcH-5l-9ng"/>
+                    <constraint firstAttribute="bottom" secondItem="dyj-yD-ucv" secondAttribute="bottom" id="kuW-9c-DtZ"/>
+                    <constraint firstAttribute="trailing" secondItem="dyj-yD-ucv" secondAttribute="trailing" id="xxU-gk-q0i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="c76-wa-w4V" id="taK-cA-zRq"/>
+                <outlet property="firstImageView" destination="dyj-yD-ucv" id="ras-5k-kwL"/>
+                <outlet property="fitstLabel" destination="oSE-Jn-uSc" id="tfs-uT-WYe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="first_img_banner1.png" width="640" height="241"/>
+    </resources>
+</document>

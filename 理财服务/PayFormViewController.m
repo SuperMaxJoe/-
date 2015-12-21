@@ -8,7 +8,6 @@
 
 #import "PayFormViewController.h"
 #import "FinancialServiceViewController.h"
-#import "SecurityCodeCell.h"
 NSString *const kName = @"Name";
 NSString *const kPersonID = @"PersonID";
 NSString *const kChooseBank = @"ChooseBank";
@@ -68,23 +67,33 @@ NSString *const kButton = @"NextBtn";
     //BankNumber
     row = [XLFormRowDescriptor formRowDescriptorWithTag:kBankNumber rowType:XLFormRowDescriptorTypeInteger title:@"银行卡号"];
     [section addFormRow:row];
+    
+    
+
     //PhoneNumber
   
     row = [XLFormRowDescriptor formRowDescriptorWithTag:kPhoneNumber rowType:XLFormRowDescriptorTypePhone];
     row.title = @"预留手机号";
     
     [section addFormRow:row];
-    
-    
     //GetNumber
     row = [XLFormRowDescriptor formRowDescriptorWithTag:kGetNumber rowType:XLFormRowDescriptorTypeInteger title:@"验证码"];
     [section addFormRow:row];
     
     
+    section = [XLFormSectionDescriptor formSection];
+    [form addFormSection:section];
+   
+    
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"getbutton" rowType:XLFormRowDescriptorTypeButton];
+    row.title = @"点击获取验证码";
+    row.action.formSelector = @selector(CodeAction:);
+    [section addFormRow:row];
     
     //
     section = [XLFormSectionDescriptor formSection];
     [form addFormSection:section];
+
     
     //NextBtn
     XLFormRowDescriptor *buttonRow = [XLFormRowDescriptor formRowDescriptorWithTag:kButton rowType:XLFormRowDescriptorTypeButton title:@"下一步"];
@@ -101,6 +110,10 @@ NSString *const kButton = @"NextBtn";
     
     
     self.form =form;
+}
+-(void)CodeAction:(XLFormRowDescriptor *)sender
+{
+    [self deselectFormRow:sender];
 }
 - (void)didTouchButton:(XLFormRowDescriptor *)sender{
     [self deselectFormRow:sender];
