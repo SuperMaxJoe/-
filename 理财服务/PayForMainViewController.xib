@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayForMainViewController">
+            <connections>
+                <outlet property="bottomView" destination="8El-UF-kzd" id="aJz-UU-PsF"/>
+                <outlet property="mainWebView" destination="qYB-SF-tzA" id="T1P-He-vJv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYB-SF-tzA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="541"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8El-UF-kzd">
+                    <rect key="frame" x="0.0" y="541" width="600" height="59"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXQ-n5-4X3">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                            <color key="backgroundColor" red="0.85882352939999995" green="0.1450980392" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="电话咨询"/>
+                            <connections>
+                                <action selector="advisoryButtonAction:" destination="-1" eventType="touchUpInside" id="I6F-5r-7vo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-AB-Jhm">
+                            <rect key="frame" x="300" y="0.0" width="300" height="59"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="购买"/>
+                            <connections>
+                                <action selector="payButtonAction:" destination="-1" eventType="touchUpInside" id="g9H-G0-nLT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="EgX-AB-Jhm" firstAttribute="top" secondItem="8El-UF-kzd" secondAttribute="top" id="2fW-kC-kB6"/>
+                        <constraint firstItem="RXQ-n5-4X3" firstAttribute="leading" secondItem="8El-UF-kzd" secondAttribute="leading" id="8b9-Jx-qRu"/>
+                        <constraint firstAttribute="bottom" secondItem="EgX-AB-Jhm" secondAttribute="bottom" id="CFi-q9-geS"/>
+                        <constraint firstAttribute="bottom" secondItem="RXQ-n5-4X3" secondAttribute="bottom" id="Hno-6X-bTV"/>
+                        <constraint firstItem="RXQ-n5-4X3" firstAttribute="top" secondItem="8El-UF-kzd" secondAttribute="top" id="KFk-jn-egp"/>
+                        <constraint firstAttribute="trailing" secondItem="EgX-AB-Jhm" secondAttribute="trailing" id="OBA-HJ-XxM"/>
+                        <constraint firstItem="EgX-AB-Jhm" firstAttribute="leading" secondItem="RXQ-n5-4X3" secondAttribute="trailing" id="aQC-e2-qsH"/>
+                        <constraint firstItem="EgX-AB-Jhm" firstAttribute="leading" secondItem="RXQ-n5-4X3" secondAttribute="trailing" id="dx3-JR-XFr"/>
+                        <constraint firstItem="EgX-AB-Jhm" firstAttribute="width" secondItem="RXQ-n5-4X3" secondAttribute="width" id="nzy-xL-IfN"/>
+                        <constraint firstAttribute="height" constant="59" id="vBM-MZ-E7v"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qYB-SF-tzA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Pm-UU-QkN"/>
+                <constraint firstItem="8El-UF-kzd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="69C-lc-ZpK"/>
+                <constraint firstAttribute="trailing" secondItem="8El-UF-kzd" secondAttribute="trailing" id="McJ-HG-avg"/>
+                <constraint firstAttribute="bottom" secondItem="8El-UF-kzd" secondAttribute="bottom" id="RNC-fW-F19"/>
+                <constraint firstItem="8El-UF-kzd" firstAttribute="top" secondItem="qYB-SF-tzA" secondAttribute="bottom" id="Rky-Na-q9a"/>
+                <constraint firstItem="qYB-SF-tzA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ml2-Ct-c0Z"/>
+                <constraint firstAttribute="trailing" secondItem="qYB-SF-tzA" secondAttribute="trailing" id="rKg-fX-1KO"/>
+                <constraint firstItem="8El-UF-kzd" firstAttribute="top" secondItem="qYB-SF-tzA" secondAttribute="bottom" id="rw4-vG-C5z"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

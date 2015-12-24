@@ -51,12 +51,17 @@ NSString *const kButton = @"NextBtn";
                             [XLFormOptionsObject formOptionsObjectWithValue:@(2) displayText:@"光大银行"],
                             [XLFormOptionsObject formOptionsObjectWithValue:@(3) displayText:@"浦发银行"],
                             [XLFormOptionsObject formOptionsObjectWithValue:@(4) displayText:@"建设银行"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(5) displayText:@"招商银行"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(6) displayText:@"农业银行"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(7) displayText:@"中国银行"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(8) displayText:@"包商银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(5) displayText:@"平安银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(6) displayText:@"中国银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(7) displayText:@"邮政银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(8) displayText:@"民生银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(9) displayText:@"广发银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(10) displayText:@"中信银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(11) displayText:@"华夏银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(12) displayText:@"交通银行"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(13) displayText:@"上海浦东发展银行"],
                             ];
-    row.value = [XLFormOptionsObject formOptionsObjectWithValue:@(8) displayText:@"工商银行"];
+    row.value = [XLFormOptionsObject formOptionsObjectWithValue:@(1) displayText:@"工商银行"];
     [section addFormRow:row];
     //BankLocation
     row = [XLFormRowDescriptor formRowDescriptorWithTag:kBankLocation rowType:XLFormRowDescriptorTypeSelectorPickerViewInline title:@"选择银行卡归属地"];

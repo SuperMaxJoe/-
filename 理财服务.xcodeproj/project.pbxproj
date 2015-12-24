@@ -37,6 +37,8 @@
 		F6D49E701C226A5D00028A62 /* FinancialServiceContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E6E1C226A5D00028A62 /* FinancialServiceContentCell.m */; settings = {ASSET_TAGS = (); }; };
 		F6D49E711C226A5D00028A62 /* FinancialServiceContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E6F1C226A5D00028A62 /* FinancialServiceContentCell.xib */; settings = {ASSET_TAGS = (); }; };
 		F6D49E771C22975D00028A62 /* PayFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E761C22975D00028A62 /* PayFormViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6E3F3E71C28D06700B2DF0B /* PayForMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3F3E51C28D06700B2DF0B /* PayForMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6E3F3E81C28D06700B2DF0B /* PayForMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E3F3E61C28D06700B2DF0B /* PayForMainViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,9 @@
 		F6D49E6F1C226A5D00028A62 /* FinancialServiceContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialServiceContentCell.xib; sourceTree = "<group>"; };
 		F6D49E751C22975D00028A62 /* PayFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayFormViewController.h; sourceTree = "<group>"; };
 		F6D49E761C22975D00028A62 /* PayFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayFormViewController.m; sourceTree = "<group>"; };
+		F6E3F3E41C28D06700B2DF0B /* PayForMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayForMainViewController.h; sourceTree = "<group>"; };
+		F6E3F3E51C28D06700B2DF0B /* PayForMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayForMainViewController.m; sourceTree = "<group>"; };
+		F6E3F3E61C28D06700B2DF0B /* PayForMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayForMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,9 @@
 			children = (
 				F6D49E2E1C22611800028A62 /* AppDelegate.h */,
 				F6D49E2F1C22611800028A62 /* AppDelegate.m */,
+				F6E3F3E41C28D06700B2DF0B /* PayForMainViewController.h */,
+				F6E3F3E51C28D06700B2DF0B /* PayForMainViewController.m */,
+				F6E3F3E61C28D06700B2DF0B /* PayForMainViewController.xib */,
 				F6224E171C27EA5900B7C1E6 /* FinamcialServiceFirstViewController.h */,
 				F6224E181C27EA5900B7C1E6 /* FinamcialServiceFirstViewController.m */,
 				F6224E191C27EA5900B7C1E6 /* FinamcialServiceFirstViewController.xib */,
@@ -363,6 +371,7 @@
 			files = (
 				F6D49E671C2263BC00028A62 /* FinancialServiceViewController.xib in Resources */,
 				F6224E2C1C27EAF400B7C1E6 /* img_banner4.jpg in Resources */,
+				F6E3F3E81C28D06700B2DF0B /* PayForMainViewController.xib in Resources */,
 				F6D49E711C226A5D00028A62 /* FinancialServiceContentCell.xib in Resources */,
 				F6D49E3B1C22611900028A62 /* LaunchScreen.storyboard in Resources */,
 				F6224E2A1C27EAF000B7C1E6 /* img_banner3.jpg in Resources */,
@@ -457,6 +466,7 @@
 				F6224E301C27EB2900B7C1E6 /* FinamcialserviceFirstTableViewCell.m in Sources */,
 				F6D49E2D1C22611800028A62 /* main.m in Sources */,
 				F6224E1A1C27EA5900B7C1E6 /* FinamcialServiceFirstViewController.m in Sources */,
+				F6E3F3E71C28D06700B2DF0B /* PayForMainViewController.m in Sources */,
 				F6D49E6B1C2269BA00028A62 /* FinancialServiceBannerCell.m in Sources */,
 				F6609D2C1C23F103001547EB /* FundCombinationViewController.m in Sources */,
 				F6D49E771C22975D00028A62 /* PayFormViewController.m in Sources */,
