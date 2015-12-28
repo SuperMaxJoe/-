@@ -7,6 +7,7 @@
 //
 
 #import "MemberBorrowViewController.h"
+#import "BorrowProgramViewController.h"
 NSString *const kPrincipal = @"Principal";
 NSString *const kProportion = @"Proportion";
 NSString *const kDeadline =@"Deadline";
@@ -34,6 +35,7 @@ NSString *const kStopline = @"Stopline";
 {
     XLFormDescriptor *form = [XLFormDescriptor formDescriptor];
     XLFormSectionDescriptor *section = [XLFormSectionDescriptor formSection];
+    [form addFormSection:section];
     //借款方案
     section.title = @"借款方案";
     XLFormRowDescriptor *principal = [XLFormRowDescriptor formRowDescriptorWithTag:kPrincipal rowType:XLFormRowDescriptorTypeSelectorPickerViewInline title:@"投资本金"];
@@ -72,11 +74,13 @@ NSString *const kStopline = @"Stopline";
     [nSection addFormRow:stopline];
     
     //button
+    XLFormSectionDescriptor *buttonSection =[XLFormSectionDescriptor formSection];
+    [form addFormSection:buttonSection];
     XLFormRowDescriptor *payButton = [XLFormRowDescriptor formRowDescriptorWithTag:@"PayButton" rowType:XLFormRowDescriptorTypeButton title:@"支付"];
     [payButton.cellConfig setObject:[UIColor whiteColor] forKey:@"textLabel.color"];
     [payButton.cellConfigAtConfigure setObject:[UIColor redColor] forKey:@"backgroundColor"];
     payButton.action.formSelector = @selector(PayAction:);
-    [nSection addFormRow:payButton];
+    [buttonSection addFormRow:payButton];
     
     
     
@@ -84,6 +88,8 @@ NSString *const kStopline = @"Stopline";
 }
 - (void)PayAction:(XLFormRowDescriptor *)sender
 {
+    BorrowProgramViewController *borrow = [[BorrowProgramViewController alloc]init];
+    [self.navigationController pushViewController:borrow animated:YES];
     [self deselectFormRow:sender];
 }
 @end

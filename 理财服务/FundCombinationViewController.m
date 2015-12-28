@@ -8,7 +8,7 @@
 
 #import "FundCombinationViewController.h"
 #import "XLFormCheckCell.h"
-
+#import "MemberBorrowViewController.h"
 NSString *const kProductName = @"ProductName";
 NSString *const kBegainNumber = @"BegainNumber";
 NSString *const kBuyNumber = @"BuyNumber";
@@ -183,7 +183,8 @@ NSString *const kPayButton = @"PayButton";
 }
 - (void)PayAction:(XLFormRowDescriptor *)sender
 {
-    
+    MemberBorrowViewController *member = [[MemberBorrowViewController alloc]init];
+    [self.navigationController pushViewController:member  animated:YES];
     [self deselectFormRow:sender];
 }
 - (void)bankCardAction:(XLFormRowDescriptor *)sender

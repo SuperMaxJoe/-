@@ -7,7 +7,7 @@
 //
 
 #import "BorrowProgramViewController.h"
-NSString *const kProductName = @"ProductName";
+NSString *const kProductNameBorrow = @"ProductNameBorrow";
 NSString *const kMoneyNumber = @"MoneyNumber";
 NSString *const kBankCard = @"BankCard";
 @interface BorrowProgramViewController ()
@@ -29,12 +29,12 @@ NSString *const kBankCard = @"BankCard";
 - (void)initializeForm
 {
     XLFormDescriptor *form = [XLFormDescriptor formDescriptor];
-    XLFormSectionDescriptor *section;
-    section.title =@"申请借款需缴纳与投资本金等额的保证金";
+    XLFormSectionDescriptor *section = [XLFormSectionDescriptor formSectionWithTitle:@"申请借款需缴纳与投资本金等额的保证金"];
+    [form addFormSection:section];
     //产品名称
-    XLFormRowDescriptor *productName = [XLFormRowDescriptor formRowDescriptorWithTag:kProductName rowType:XLFormRowDescriptorTypeInfo title:@"产品名称"];
-    productName.value = @"借款保证金";
-    [section addFormRow:productName];
+    XLFormRowDescriptor *productNameBorrow = [XLFormRowDescriptor formRowDescriptorWithTag:kProductNameBorrow rowType:XLFormRowDescriptorTypeInfo title:@"产品名称"];
+    productNameBorrow.value = @"借款保证金";
+    [section addFormRow:productNameBorrow];
     //产品金额
     XLFormRowDescriptor *moneyNumber = [XLFormRowDescriptor formRowDescriptorWithTag:kMoneyNumber rowType:XLFormRowDescriptorTypeInfo title:@"产品金额"];
     moneyNumber.value = @"10000元";
@@ -67,14 +67,13 @@ NSString *const kBankCard = @"BankCard";
     
     
     //button
+    XLFormSectionDescriptor *buttonSection = [XLFormSectionDescriptor formSection];
+    [form addFormSection:buttonSection];
     XLFormRowDescriptor *payButton = [XLFormRowDescriptor formRowDescriptorWithTag:@"PayButton" rowType:XLFormRowDescriptorTypeButton title:@"支付"];
     [payButton.cellConfig setObject:[UIColor whiteColor] forKey:@"textLabel.color"];
     [payButton.cellConfigAtConfigure setObject:[UIColor redColor] forKey:@"backgroundColor"];
     payButton.action.formSelector = @selector(PayAction:);
-    [section addFormRow:payButton];
-    
-    
-    
+    [buttonSection addFormRow:payButton];
     self.form = form;
 }
 - (void)PayAction:(XLFormRowDescriptor *)sender
