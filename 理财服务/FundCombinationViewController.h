@@ -9,5 +9,8 @@
 #import <XLForm/XLForm.h>
 
 @interface FundCombinationViewController : XLFormViewController
-
+@property (nonatomic,retain)NSArray *bankNo;
+@property (nonatomic,copy)NSString *bankName;
+@property (nonatomic,copy)NSString *dailyLimit;
+@property (nonatomic,copy)NSString *singleLimit;
 @end
