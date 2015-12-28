@@ -23,6 +23,10 @@
 		F6609D271C23B2C4001547EB /* text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6609D261C23B2C4001547EB /* text.jpg */; settings = {ASSET_TAGS = (); }; };
 		F6609D291C23D756001547EB /* proAndCityinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6609D281C23D756001547EB /* proAndCityinfo.plist */; settings = {ASSET_TAGS = (); }; };
 		F6609D2C1C23F103001547EB /* FundCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6609D2B1C23F103001547EB /* FundCombinationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6AA96251C30DE2E0073FD6F /* MemberBorrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AA96231C30DE2E0073FD6F /* MemberBorrowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6AA96261C30DE2E0073FD6F /* MemberBorrowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA96241C30DE2E0073FD6F /* MemberBorrowViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		F6AA962A1C30E6E50073FD6F /* BorrowProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AA96281C30E6E50073FD6F /* BorrowProgramViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6AA962B1C30E6E50073FD6F /* BorrowProgramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA96291C30E6E50073FD6F /* BorrowProgramViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		F6D49E2D1C22611800028A62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E2C1C22611800028A62 /* main.m */; };
 		F6D49E301C22611800028A62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D49E2F1C22611800028A62 /* AppDelegate.m */; };
 		F6D49E361C22611900028A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D49E341C22611900028A62 /* Main.storyboard */; };
@@ -80,6 +84,12 @@
 		F6609D281C23D756001547EB /* proAndCityinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = proAndCityinfo.plist; sourceTree = "<group>"; };
 		F6609D2A1C23F103001547EB /* FundCombinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundCombinationViewController.h; sourceTree = "<group>"; };
 		F6609D2B1C23F103001547EB /* FundCombinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundCombinationViewController.m; sourceTree = "<group>"; };
+		F6AA96221C30DE2E0073FD6F /* MemberBorrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberBorrowViewController.h; sourceTree = "<group>"; };
+		F6AA96231C30DE2E0073FD6F /* MemberBorrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberBorrowViewController.m; sourceTree = "<group>"; };
+		F6AA96241C30DE2E0073FD6F /* MemberBorrowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberBorrowViewController.xib; sourceTree = "<group>"; };
+		F6AA96271C30E6E50073FD6F /* BorrowProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowProgramViewController.h; sourceTree = "<group>"; };
+		F6AA96281C30E6E50073FD6F /* BorrowProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowProgramViewController.m; sourceTree = "<group>"; };
+		F6AA96291C30E6E50073FD6F /* BorrowProgramViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BorrowProgramViewController.xib; sourceTree = "<group>"; };
 		F6D49E281C22611800028A62 /* 理财服务.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "理财服务.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D49E2C1C22611800028A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6D49E2E1C22611800028A62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -259,6 +269,12 @@
 				F6D49E761C22975D00028A62 /* PayFormViewController.m */,
 				F6609D2A1C23F103001547EB /* FundCombinationViewController.h */,
 				F6609D2B1C23F103001547EB /* FundCombinationViewController.m */,
+				F6AA96221C30DE2E0073FD6F /* MemberBorrowViewController.h */,
+				F6AA96231C30DE2E0073FD6F /* MemberBorrowViewController.m */,
+				F6AA96241C30DE2E0073FD6F /* MemberBorrowViewController.xib */,
+				F6AA96271C30E6E50073FD6F /* BorrowProgramViewController.h */,
+				F6AA96281C30E6E50073FD6F /* BorrowProgramViewController.m */,
+				F6AA96291C30E6E50073FD6F /* BorrowProgramViewController.xib */,
 			);
 			name = xlform;
 			sourceTree = "<group>";
@@ -370,7 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D49E671C2263BC00028A62 /* FinancialServiceViewController.xib in Resources */,
+				F6AA96261C30DE2E0073FD6F /* MemberBorrowViewController.xib in Resources */,
 				F6224E2C1C27EAF400B7C1E6 /* img_banner4.jpg in Resources */,
+				F6AA962B1C30E6E50073FD6F /* BorrowProgramViewController.xib in Resources */,
 				F6E3F3E81C28D06700B2DF0B /* PayForMainViewController.xib in Resources */,
 				F6D49E711C226A5D00028A62 /* FinancialServiceContentCell.xib in Resources */,
 				F6D49E3B1C22611900028A62 /* LaunchScreen.storyboard in Resources */,
@@ -466,9 +484,11 @@
 				F6224E301C27EB2900B7C1E6 /* FinamcialserviceFirstTableViewCell.m in Sources */,
 				F6D49E2D1C22611800028A62 /* main.m in Sources */,
 				F6224E1A1C27EA5900B7C1E6 /* FinamcialServiceFirstViewController.m in Sources */,
+				F6AA962A1C30E6E50073FD6F /* BorrowProgramViewController.m in Sources */,
 				F6E3F3E71C28D06700B2DF0B /* PayForMainViewController.m in Sources */,
 				F6D49E6B1C2269BA00028A62 /* FinancialServiceBannerCell.m in Sources */,
 				F6609D2C1C23F103001547EB /* FundCombinationViewController.m in Sources */,
+				F6AA96251C30DE2E0073FD6F /* MemberBorrowViewController.m in Sources */,
 				F6D49E771C22975D00028A62 /* PayFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
