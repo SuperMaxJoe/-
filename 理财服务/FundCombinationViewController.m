@@ -18,8 +18,9 @@ NSString *const kBuyProductName = @"ProductName";
 NSString *const kProductMoney = @"ProductMoney";
 NSString *const kCoupon = @"Coupon";
 NSString *const kBindCard = @"BindCard";
-NSString *const kOnlinePay = @"OnlinePay";
-NSString *const kMemberCard = @"MemberCard";
+//NSString *const kOnlinePay = @"OnlinePay";
+//NSString *const kMemberCard = @"MemberCard";
+NSString *const kPayType = @"PayType";
 NSString *const kArrguement = @"Arrguement";
 NSString *const kArrguementChick = @"ArrguementChick";
 NSString *const kPayButton = @"PayButton";
@@ -104,11 +105,11 @@ NSString *const kPayButton = @"PayButton";
     //ProductMoney
     
     XLFormRowDescriptor  *productMoney = [XLFormRowDescriptor formRowDescriptorWithTag:kProductMoney rowType:XLFormRowDescriptorTypeInfo title:@"产品金额"];
-    if ([[buyProductionName.value  valueData]isEqualToNumber:@(0)]) {
+    if (buyProductionName.selectorOptions[0]) {
         productMoney.value = @"399";
-    }else if([[buyProductionName.value  valueData]isEqualToNumber:@(1)]){
+    }else if(buyProductionName.selectorOptions[1]){
         productMoney.value = @"799";
-    }else if([[buyProductionName.value  valueData]isEqualToNumber:@(2)]){
+    }else if(buyProductionName.selectorOptions[2]){
         productMoney.value = @"1999";
     }
     
@@ -137,10 +138,14 @@ NSString *const kPayButton = @"PayButton";
         bankAdd.action.formSelector = @selector(bankCardAction:);
         [section addFormRow:bankAdd];
     }else{
-        XLFormRowDescriptor *bankCard = [XLFormRowDescriptor formRowDescriptorWithTag:kBindCard rowType:XLFormRowDescriptorTypeInfo];
+        XLFormRowDescriptor *bankCard = [XLFormRowDescriptor formRowDescriptorWithTag:kBindCard rowType:XLFormRowDescriptorTypeButton];
         bankCard.title = @"银行卡(未绑定)";
+         [bankCard.cellConfig setObject:@(NSTextAlignmentNatural) forKey:@"textLabel.textAlignment"];
+//        bankCard.title = @"点击绑定银行卡";
+//        [bankCard.cellConfig setObject:@(NSTextAlignmentRight) forKey:@"textLabel.textAlignment"];
         [bankCard.cellConfig setObject:[UIFont fontWithName:@"Helvetica" size:15] forKey:@"textLabel.font"];
         bankCard.value = @"点击绑定银行卡";
+
         bankCard.action.formSelector = @selector(bankCardAction:);
         [section addFormRow:bankCard];
     }
@@ -148,19 +153,13 @@ NSString *const kPayButton = @"PayButton";
     XLFormSectionDescriptor *paySection = [XLFormSectionDescriptor formSection];
     paySection.title = @"选择支付方式";
     [form addFormSection:paySection];
-    //Online
-    XLFormRowDescriptor  *onlinePay = [XLFormRowDescriptor formRowDescriptorWithTag:kOnlinePay rowType:XLFormRowDescriptorTypeBooleanCheck title:@"在线支付"];
 
-    XLFormCheckCell *checkCell = [[XLFormCheckCell alloc]init];
-    [self updateFormRow:onlinePay];
-    checkCell.rowDescriptor.value = [NSNumber numberWithBool:![checkCell.rowDescriptor.value boolValue]];
-    //MemberCard
-    XLFormRowDescriptor  *memberCard = [XLFormRowDescriptor formRowDescriptorWithTag:kMemberCard rowType:XLFormRowDescriptorTypeBooleanCheck title:@"会员卡支付"];
+    
+    XLFormRowDescriptor *payRow = [XLFormRowDescriptor formRowDescriptorWithTag:kPayType rowType:XLFormRowDescriptorTypeSelectorPush title:@"支付方式选择"];
     
     
-    
-    [paySection addFormRow:onlinePay];
-    [paySection addFormRow:memberCard];
+    payRow.selectorOptions = @[@"在线支付",@"会员卡支付"];
+    [paySection addFormRow:payRow];
     
     //协议
     XLFormRowDescriptor  *arrguement = [XLFormRowDescriptor formRowDescriptorWithTag:kArrguement rowType:XLFormRowDescriptorTypeInfo title:@"<<点财通会员服务协议>>"];
@@ -189,8 +188,24 @@ NSString *const kPayButton = @"PayButton";
 }
 - (void)bankCardAction:(XLFormRowDescriptor *)sender
 {
+    NSLog(@"hahah");
     [self deselectFormRow:sender];
 }
-
+- (void)formRowDescriptorValueHasChanged:(XLFormRowDescriptor *)formRow oldValue:(id)oldValue newValue:(id)newValue
+{
+    [super formRowDescriptorValueHasChanged:formRow oldValue:oldValue newValue:newValue];
+    if ([formRow.tag isEqualToString:kProductName]) {
+        if ([[newValue valueData]isEqualToNumber:@(0)]) {
+            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
+            productMoney.value = @"399";
+        }else if ([[newValue valueData]isEqualToNumber:@(1)]){
+            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
+            productMoney.value = @"799";
+        }else if ([[newValue valueData]isEqualToNumber:@(2)]){
+            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
+            productMoney.value = @"1999";
+        }
+    }
+}
 
 @end

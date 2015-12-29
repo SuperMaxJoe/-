@@ -55,6 +55,7 @@ NSString *const kStopline = @"Stopline";
     [section addFormRow:deadline];
     //服务费在服务前扣除,利息在服务结束后扣除
     XLFormSectionDescriptor *nSection = [XLFormSectionDescriptor formSection];
+    nSection.title = @"服务费在服务前扣除,利息在服务结束后扣除";
     [form addFormSection:nSection];
     //服务费
     XLFormRowDescriptor *serviceMoney = [XLFormRowDescriptor formRowDescriptorWithTag:kServiceMoney rowType:XLFormRowDescriptorTypeInfo title:@"服务费"];
