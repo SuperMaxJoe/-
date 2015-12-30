@@ -93,4 +93,19 @@ NSString *const kStopline = @"Stopline";
     [self.navigationController pushViewController:borrow animated:YES];
     [self deselectFormRow:sender];
 }
+- (void)formRowDescriptorValueHasChanged:(XLFormRowDescriptor *)formRow oldValue:(id)oldValue newValue:(id)newValue
+{
+    [super formRowDescriptorValueHasChanged:formRow oldValue:oldValue newValue:newValue];
+    if ([formRow.tag isEqualToString:kPrincipal]) {
+        if ([[oldValue valueData]isEqualToString:[newValue valueData]]==NO) {
+            [formRow.valueData removeObject:[oldValue valueData]];
+            [formRow.valueData addObject:[newValue valueData]];
+        }
+        if ([UIAlertController class]) {
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[newValue valueData] message:@"!!!" preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:nil]];
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
+    }
+}
 @end

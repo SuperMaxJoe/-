@@ -177,7 +177,6 @@ NSString *const kPayButton = @"PayButton";
     payButton.action.formSelector = @selector(PayAction:);
     [buttonSection addFormRow:payButton];
     
-    
     self.form = form;
 }
 - (void)PayAction:(XLFormRowDescriptor *)sender
@@ -194,17 +193,10 @@ NSString *const kPayButton = @"PayButton";
 - (void)formRowDescriptorValueHasChanged:(XLFormRowDescriptor *)formRow oldValue:(id)oldValue newValue:(id)newValue
 {
     [super formRowDescriptorValueHasChanged:formRow oldValue:oldValue newValue:newValue];
-    if ([formRow.tag isEqualToString:kProductName]) {
-        if ([[newValue valueData]isEqualToNumber:@(0)]) {
-            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
-            productMoney.value = @"399";
-        }else if ([[newValue valueData]isEqualToNumber:@(1)]){
-            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
-            productMoney.value = @"799";
-        }else if ([[newValue valueData]isEqualToNumber:@(2)]){
-            XLFormRowDescriptor *productMoney = [self.form formRowWithTag:kProductMoney];
-            productMoney.value = @"1999";
-        }
+    if ([formRow.tag isEqualToString:kProductMoney]) {
+       
+        
+        
     }
 }
 
