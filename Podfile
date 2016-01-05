@@ -3,6 +3,7 @@
 # Uncomment this line if you're using Swift
  use_frameworks!
 pod 'XLForm', :git => 'https://github.com/xmartlabs/XLForm.git'
+pod 'AFNetworking', '~> 3.0'
 target '理财服务' do
 
 end

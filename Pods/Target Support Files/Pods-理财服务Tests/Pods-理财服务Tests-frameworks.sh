@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-理财服务Tests/AFNetworking.framework"
   install_framework "Pods-理财服务Tests/XLForm.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-理财服务Tests/AFNetworking.framework"
   install_framework "Pods-理财服务Tests/XLForm.framework"
 fi

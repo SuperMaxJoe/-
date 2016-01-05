@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-理财服务.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>409A62549B7CA75938D9FDCC5DE9520B</key>
+		<key>0C9EF043B383A13D4FBB14CB48E420EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CAEAE935A488C03806C47272AC65744</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6947CF2DA7A523D95F49594521E49CB5</key>
+		<key>2AA5D88E528769D06D1D31775972F929</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9783A50450A355914D4FE7F72889A205</key>
+		<key>523C2B5B7A4D76C5BCDAE901AA02C737</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCFA3CD29DE38A19943C47FFF6163697</key>
+		<key>60542ED32C88D0ACFD1F790397A70BF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA08C89D6D7E33E4F0605E4B1412F3AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
