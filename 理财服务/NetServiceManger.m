@@ -20,12 +20,14 @@
     });
     return _intance;
 }
--(void)showToastWithMessage:(NSString *)message showTime:(float)interval
+-(void)postRequestWithDictionary:(NSDictionary *)dict Finsh:(httpRequestSuc)finsh Fail:(httpRequestFail)fail Url:(NSString *)url Tag:(NSInteger)tag
 {
-    if (message.length < 1) {
-        return;
-    }
-    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:@"成功请求" parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"cheng");
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       NSLog( @"shi");
+    }];
 }
 
 
